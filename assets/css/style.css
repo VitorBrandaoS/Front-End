@@ -2,7 +2,7 @@
 
 .stilus{
     font-family: cursive;
-    background-color: darkslateblue;
+    background-color: #613dc1;
     color: rgb(81, 255, 255);
 }
 
@@ -10,15 +10,16 @@
     text-align: center;
 }
 
-#menu li {
+.menu li {
     display: inline;
-    padding: 10px;
+    margin: 10px;
 }
 
 .botao:hover {
     color: rgb(255, 255, 255);
-    background-color: rgb(53, 53, 53);
+    opacity: 0.5;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .botao {    
@@ -26,9 +27,11 @@
     height: 40px;
     width: 100px;
     border-radius: 20px;
-    background-color:rgb(92, 92, 92);
+    border-style: hidden;
+    background-color:#3c096c;
     text-align: center;
     color:rgb(81, 255, 255);   
+    box-shadow: 0px 6px 10px rgb(44, 230, 255);
 }
 
 .banner {
@@ -46,9 +49,8 @@
 .container2 {
     display: flex;
     flex-flow: row;
-    justify-content: space-around;
-    margin: 20px;
-    margin-bottom: 100px;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
 }
 
 .mc {
@@ -63,10 +65,73 @@
 .wh-300 {
     width: 50px;
     height: 50px;
+    object-fit: cover;
 }
 
 .pd-30 {
     padding: 30px;
 }
 
+.icon:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.social {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    
+}
+
+.logo-social {
+    width: 50px;
+    margin: 10px;
+}
+
+.hr {
+    border-color: #9e62f8;
+}
+
+.boxsd {
+    box-shadow: -5px 8px 10px rgb(44, 230, 255);
+}
+
+.textsd {
+    text-shadow: -5px 5px 5px rgb(39, 0, 87);
+}
+
+.text-mid {
+    margin: 20px; 
+    width: 30%; 
+    font-size: 20px; 
+    text-align: justify;
+}
+
 /*Estilos da página contato.html*/
+
+.boxsd2 {
+    box-shadow: -5px 8px 10px rgb(53, 0, 117);
+}
+
+/*Estilos da página Ilustações*/
+
+.galeria {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.ilust {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    margin: 5px;
+    box-shadow: -5px 5px 10px #3c096c;
+    border: 2px solid #9e62f8;
+}
+
+.ilust:hover {
+    object-fit: scale-down;
+    cursor: zoom-in;
+}

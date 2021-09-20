@@ -37,18 +37,19 @@
                 </h2>
                 <form class="textsd">
                     <label for="nome">Nome:</label><br>
-                    <input type="text" id="nome" class="boxsd2">
-                    <br>
+                    <input type="text" id="nome" class="boxsd2" onkeyup="validaNome()">
+                    <div id="txtNome"></div>
                     <br>
                     <label for="email">Email:</label><br>
-                    <input type="email" id="email" class="boxsd2">
-                    <br>
+                    <input type="email" id="email" class="boxsd2" onkeyup="validaEmail()">
+                    <div id="txtEmail"></div>
                     <br>
                     <label for="assunto">Texto:</label><br>
-                    <textarea name="assunto" id="assunto" cols="60" rows="5" class="boxsd2"></textarea>
+                    <textarea name="assunto" id="assunto" cols="60" rows="5" class="boxsd2" onkeyup="validaAssunto()"></textarea>
+                    <div id="txtAssunto"></div>
                     <br>
                     <br>
-                    <button class="botao">Enviar</button>
+                    <button class="botao" onclick="enviar()">Enviar</button>
                 </form>
             </div>
             <div class="textsd">
@@ -57,7 +58,7 @@
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14636.315753627514!2d-46.45362456971548!3d-23.493666055462906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce616491b50329%3A0xbf9ea041248320ba!2sS%C3%A3o%20Miguel%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1631828472344!5m2!1spt-BR!2sbr"
                     width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                    class="boxsd2"></iframe>
+                    class="boxsd2" onmousemove="mapaZoomIn()" onmouseout="mapaZoomOut()" id="mapa"></iframe>
             </div>
         </div>
     </main>
@@ -87,6 +88,8 @@
             </p>
         </footer>
     </div>
+
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

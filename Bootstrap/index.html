@@ -35,12 +35,12 @@
                 class="btn btn-outline-danger btn-dark btn-lg" type="submit">Imagens</button></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#"><button
+            <a class="nav-link active" aria-current="page" href="#videos"><button
                 class="btn btn-outline-danger btn-dark btn-lg" type="submit">Vídeos</button></a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#"><button
-                class="btn btn-outline-danger btn-dark btn-lg" type="submit">Agradescimentos</button></a>
+                class="btn btn-outline-danger btn-dark btn-lg" type="submit">Formulário</button></a>
           </li>
         </ul>
       </div>
@@ -89,7 +89,7 @@
     </div>
   </div>
   <!-- Container 1 -->
-  <div class="container-fluid bg-dark text-light p-1 mb-1 ">
+  <div class="container-fluid bg-dark text-light p-1 mb-1" id="sobre">
     <div class="container bg-dark p-4 text-center">
       <h1 class="display-4">Bem vindo!</h1>
       <hr>
@@ -98,9 +98,19 @@
   </div>
   <!-- /Container -->
 
+  <style>
+    .cardCustom {
+      transition: transform 0.5s;
+    }
+
+    .cardCustom:hover {
+      transform: scale(1.2);
+    }
+  </style>
+
   <!-- Cards -->
-  <div class="container-fluid d-flex justify-content-center" id="sobre">
-    <div class="card m-2 shadow bg-dark text-light" style="width: 30rem;">
+  <div class="container-fluid d-flex justify-content-center">
+    <div class="card m-2 shadow bg-dark text-light cardCustom" style="width: 30rem;">
       <img src="imgs/escravoGael.gif" class="card-img-top" alt="...">
       <div class="card-body">
         <h4>Gael o Cavaleiro Escravo</h4>
@@ -111,7 +121,7 @@
           desejava pintar um novo mundo.</p>
       </div>
     </div>
-    <div class="card m-2 shadow bg-dark text-light" style="width: 30rem;">
+    <div class="card m-2 shadow bg-dark text-light cardCustom" style="width: 30rem;">
       <img src="imgs/Snake.gif" class="card-img-top" alt="..." style="height: 220px; object-fit: cover;">
       <div class="card-body">
         <h4>Snake | Metal Gear</h4>
@@ -121,7 +131,7 @@
           FOXHOUND!</p>
       </div>
     </div>
-    <div class="card m-2 shadow bg-dark text-light" style="width: 30rem;">
+    <div class="card m-2 shadow bg-dark text-light cardCustom" style="width: 30rem;">
       <img src="imgs/fnf.gif" class="card-img-top" alt="...">
       <div class="card-body">
         <h4>Friday Night Funking</h4>
@@ -132,7 +142,7 @@
           2000.</p>
       </div>
     </div>
-    <div class="card m-2 shadow bg-dark text-light" style="width: 30rem;">
+    <div class="card m-2 shadow bg-dark text-light cardCustom" style="width: 30rem;">
 
       <img src="imgs/sotcxd.gif" class="card-img-top" alt="...">
       <div class="card-body">
@@ -147,7 +157,7 @@
   <!-- /Cards -->
 
   <!-- Container 2 -->
-  <div class="container-fluid bg-dark text-light p-1 mb-1 ">
+  <div class="container-fluid bg-dark text-light p-1 mb-1 " id="imagens">
     <div class="container bg-dark p-4 text-center">
       <h1 class="display-4">Imagens</h1>
       <hr>
@@ -169,7 +179,7 @@
   </style>
 
   <!-- Imagens -->
-  <div class="container d-flex flex-wrap justify-content-center" id="imagens">
+  <div class="container d-flex flex-wrap justify-content-center" >
     <figure class="figure shadow" style="margin: 5px;">
       <img src="imgs/gael2.jpg" class="figure-img img-fluid rounded img" alt="...">
       <figcaption class="figure-caption ms-3">Gael o Cavaleiro Escravo.</figcaption>
@@ -198,7 +208,7 @@
   <!-- /Imagens -->
 
   <!-- Container 3 -->
-  <div class="container-fluid bg-dark text-light p-1 mb-1 ">
+  <div class="container-fluid bg-dark text-light p-1 mb-1 " id="videos">
     <div class="container bg-dark p-4 text-center">
       <h1 class="display-4">Vídeos</h1>
       <hr>
@@ -206,8 +216,28 @@
   </div>
   <!-- /Container -->
 
+<!-- Videos -->
+<div class="d-flex bd-highlight">
+  <div class="p-2 w-100 bd-highlight">Metal Gear Solid 3 Snake Eater HD Gameplay Walkthrough PC PS3/360 No Commentary 2160p 60fps HD let's play playthrough review guide
+    Showcasing all cutscenes movie edition, all boss fights / boss fights, side missions, upgrades, outfits / costumes, all characters, best moments, final boss and true ending, secret ending.
+    Subscribe for more!</div>
+  <div class="p-2 w-50 flex-shrink-1 bd-highlight"><iframe width="560" height="315" src="https://www.youtube.com/embed/yylqag0fvvQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+</div>
+<div class="d-flex bd-highlight">
+  <div class="p-2 w-100 bd-highlight">Vídeo com o Gameplay do terceiro Colosso em Shadow of The Colossus na sua versão Remake para PS4. O jogo está legendado em Português rodando no PS4 Pro. </div>
+  <div class="p-2 w-50 flex-shrink-1 bd-highlight"><iframe width="560" height="315" src="https://www.youtube.com/embed/07CTY8GJoUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+</div>
+<div class="d-flex bd-highlight">
+  <div class="p-2 w-100 bd-highlight">Oh my god. That was an insanely hard song to FC. But I finally did it, I hope you guys enjoy!
+    Also, please, please, please check out this awesome channel Devilchilly that did this song</div>
+  <div class="p-2 w-50 flex-shrink-1 bd-highlight"><iframe width="560" height="315" src="https://www.youtube.com/embed/rH24gi1TQys" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+</div>
+<div class="d-flex bd-highlight">
+  <div class="p-2 w-100 bd-highlight">Dark Souls 3 The Ringed City DLC Slave Knight Gael Boss Fight, all phases, Final DLC Boss Fight in 4K 60FPS ULTRA SETTINGS PC.</div>
+  <div class="p-2 w-50 flex-shrink-1 bd-highlight"><iframe width="560" height="315" src="https://www.youtube.com/embed/2y2NBCVdyJ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+</div>
+<!-- /Videos -->
 
-  
   <!-- Scripts Bootstraps -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"

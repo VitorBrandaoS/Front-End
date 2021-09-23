@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+</head>
+
+<body class="bg-light">
+  <!-- Menu -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow fixed-top">
+    <div class="container-fluid">
+      <img src="imgs/game-control.png" alt="" style="width: 50px; margin-left: 50px;">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 m-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><button
+                class="btn btn-outline-danger btn-dark btn-lg" type="submit">Inicio</button></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#sobre"><button
+                class="btn btn-outline-danger btn-dark btn-lg" type="submit">Sobre</button></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#imagens"><button
+                class="btn btn-outline-danger btn-dark btn-lg" type="submit">Imagens</button></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><button
+                class="btn btn-outline-danger btn-dark btn-lg" type="submit">Vídeos</button></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><button
+                class="btn btn-outline-danger btn-dark btn-lg" type="submit">Agradescimentos</button></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- /Menu -->
+
+  <!-- Carousel -->
+  <div class="container-fluid">
+    <div id="carouselExampleIndicators" class="carousel slide shadow" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+      </div>
+
+      <div class="carousel-inner" style="max-height: 700px;">
+        <div class="carousel-item active">
+          <img src="imgs/gael.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="imgs/fnf.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="imgs/Metal-Gear.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="imgs/sotc.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <!-- Container 1 -->
+  <div class="container-fluid bg-dark text-light p-1 mb-1 ">
+    <div class="container bg-dark p-4 text-center">
+      <h1 class="display-4">Bem vindo!</h1>
+      <hr>
+      <h1 style="font-size: 24px;">Sobre</h1>
+    </div>
+  </div>
+  <!-- /Container -->
+
+  <!-- Cards -->
+  <div class="container-fluid d-flex justify-content-center" id="sobre">
+    <div class="card m-2 shadow bg-dark text-light" style="width: 30rem;">
+      <img src="imgs/escravoGael.gif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4>Gael o Cavaleiro Escravo</h4>
+        <hr>
+        <p class="card-text">Ele é uma aberração criada ao consumir o Alma escura. Não se sabe por qual reino Gael lutou
+          ou em quais→
+          guerras ele atuou. Em algum momento de sua vida, ele encontrou o Mundo Pintado de Ariandel e uma jovem que
+          desejava pintar um novo mundo.</p>
+      </div>
+    </div>
+    <div class="card m-2 shadow bg-dark text-light" style="width: 30rem;">
+      <img src="imgs/Snake.gif" class="card-img-top" alt="..." style="height: 220px; object-fit: cover;">
+      <div class="card-body">
+        <h4>Snake | Metal Gear</h4>
+        <hr>
+        <p class="card-text">Big Boss, nome verdadeiro John e anteriormente conhecido como Snake, era um renomado agente
+          das forças especiais e mercenário comandante. Ele fundou a Unidade de Forças Especiais do Exército dos EUA
+          FOXHOUND!</p>
+      </div>
+    </div>
+    <div class="card m-2 shadow bg-dark text-light" style="width: 30rem;">
+      <img src="imgs/fnf.gif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4>Friday Night Funking</h4>
+        <hr>
+        <p class="card-text">Friday Night Funkin' é um jogo de ritmo gratuito e de código aberto. Desenvolvido por uma
+          equipe de quatro usuários do Newgrounds, o jogo tem um estilo de jogo semelhante a Dance Dance Revolution e
+          PaRappa the Rapper, e com uma estética que lembra os jogos em Flash populares do início a meados dos anos
+          2000.</p>
+      </div>
+    </div>
+    <div class="card m-2 shadow bg-dark text-light" style="width: 30rem;">
+
+      <img src="imgs/sotcxd.gif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4>Shadow of The Colossus</h4>
+        <hr>
+        <p class="card-text">Shadow of the Colossus, lançado no Japão. O enredo do jogo se concentra em um jovem chamado
+          Wander, que deve viajar por uma terra proibida com o objetivo de derrotar dezesseis criaturas, conhecidas
+          simplesmente como Colossus, para restaurar a vida de uma garota chamada Mono.</p>
+      </div>
+    </div>
+  </div>
+  <!-- /Cards -->
+
+  <!-- Container 2 -->
+  <div class="container-fluid bg-dark text-light p-1 mb-1 ">
+    <div class="container bg-dark p-4 text-center">
+      <h1 class="display-4">Imagens</h1>
+      <hr>
+    </div>
+  </div>
+  <!-- /Container -->
+
+  <style>
+    .img {
+      width: 500px;
+      height: 500px;
+      object-fit: cover;
+      transition: transform 0.5s;
+    }
+
+    .img:hover {
+      transform: scale(1.2);
+    }
+  </style>
+
+  <!-- Imagens -->
+  <div class="container d-flex flex-wrap justify-content-center" id="imagens">
+    <figure class="figure shadow" style="margin: 5px;">
+      <img src="imgs/gael2.jpg" class="figure-img img-fluid rounded img" alt="...">
+      <figcaption class="figure-caption ms-3">Gael o Cavaleiro Escravo.</figcaption>
+    </figure>
+    <figure class="figure shadow" style="margin: 5px;">
+      <img src="imgs/BoyFriend.jpg" class="figure-img img-fluid rounded img" alt="...">
+      <figcaption class="figure-caption ms-3">Boy Friend FNF.</figcaption>
+    </figure>
+    <figure class="figure shadow" style="margin: 5px;">
+      <img src="imgs/MGS3_Big_Boss_Artwork.jpg" class="figure-img img-fluid rounded img" alt="...">
+      <figcaption class="figure-caption ms-3">Snake MGS3.</figcaption>
+    </figure>
+    <figure class="figure shadow" style="margin: 5px;">
+      <img src="imgs/awdsad.jpg" class="figure-img img-fluid rounded img" alt="...">
+      <figcaption class="figure-caption ms-3">Wander.</figcaption>
+    </figure>
+    <figure class="figure shadow" style="margin: 5px;">
+      <img src="imgs/mgsart1.jpg" class="figure-img img-fluid rounded img" alt="...">
+      <figcaption class="figure-caption ms-3">Art Metal Gear Solid.</figcaption>
+    </figure>
+    <figure class="figure shadow" style="margin: 5px;">
+      <img src="imgs/fnfArt1.jpg" class="figure-img img-fluid rounded img" alt="...">
+      <figcaption class="figure-caption ms-3">Art Friday Night Funking.</figcaption>
+    </figure>
+  </div>
+  <!-- /Imagens -->
+
+  <!-- Container 3 -->
+  <div class="container-fluid bg-dark text-light p-1 mb-1 ">
+    <div class="container bg-dark p-4 text-center">
+      <h1 class="display-4">Vídeos</h1>
+      <hr>
+    </div>
+  </div>
+  <!-- /Container -->
+
+
+  
+  <!-- Scripts Bootstraps -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

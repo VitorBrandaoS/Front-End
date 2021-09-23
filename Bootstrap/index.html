@@ -39,7 +39,7 @@
                 class="btn btn-outline-danger btn-dark btn-lg" type="submit">Vídeos</button></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#"><button
+            <a class="nav-link active" aria-current="page" href="#formulario"><button
                 class="btn btn-outline-danger btn-dark btn-lg" type="submit">Formulário</button></a>
           </li>
         </ul>
@@ -259,16 +259,79 @@
   <!-- Container 4 -->
   <div class="container-fluid bg-dark text-light p-1 mb-1 " id="videos">
     <div class="container bg-dark p-4 text-center">
-      <h1 class="display-4">Formulálio</h1>
+      <h1 class="display-4">Formulário</h1>
       <hr>
-      <h4>Mande aqui algo que você curta!</h4>
+      <h4>Mande aqui jogos ou conteúdos que você curte!</h4>
     </div>
   </div>
   <!-- /Container -->
 
+  <!-- Formulário -->
+  <div class="container d-block mt-5 mb-5" id="formulario">
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Email</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Assunto</label>
+      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Assunto">
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Texto</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+  </div>
+  <!-- /Formulário -->
+
+  <style>
+    .social {
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+    }
+
+    .logo-social {
+      width: 50px;
+      margin: 10px;
+    }
+
+    .icon:hover {
+      opacity: 0.5;
+    }
+
+    .icon {
+      transition: 0.5s;
+    }
+  </style>
 
 
+  <!-- Rodapé -->
+  <hr class="hr">
+  <div class="social">
+    <a href="https://github.com/VitorBrandaoS" target="_blank">
+      <img src="imgs/github.png" alt="GitHub" class="logo-social icon">
+    </a>
 
+    <a href="https://www.linkedin.com/in/vitor-brand%C3%A3o-silva-7a16041a5/" target="_blank">
+      <img src="imgs/linkedin3.png" alt="Linkedin" class="logo-social icon">
+    </a>
+
+    <a href="https://www.instagram.com/dominusxxi/" target="_blank">
+      <img src="imgs/instagram2.png" alt="instagram" class="logo-social icon">
+    </a>
+
+    <a href="https://www.twitch.tv/dominusxxi" target="_blank">
+      <img src="imgs/twitch.png" alt="Twitch" class="logo-social icon">
+    </a>
+  </div>
+  <div>
+    <footer>
+      <p class="text-center">
+        Direitos reservados: DominusXXI &copy
+      </p>
+    </footer>
+  </div>
+  <!-- /Rodapé -->
 
   <!-- Scripts Bootstraps -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"

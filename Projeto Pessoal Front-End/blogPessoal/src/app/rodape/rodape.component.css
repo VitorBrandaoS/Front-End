@@ -1,0 +1,32 @@
+ul.social-network {
+    list-style: none; 
+    padding: 0;
+}
+
+ul.social-network li {
+    display: inline;
+    margin: 0;
+    padding: 5px;
+}
+
+.fa {
+    font-size: 35pt;
+    color: aliceblue;
+    padding: 10px;
+}
+
+.fa-instagram:hover {
+    color: aqua;
+}
+
+.fa-twitch:hover {
+    color: aqua;
+}
+
+.fa-linkedin-square:hover {
+    color: aqua;
+}
+
+.fa-github:hover {
+    color: aqua;
+}

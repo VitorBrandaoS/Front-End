@@ -1,0 +1,36 @@
+#img-bg {
+    background-image: url("../../assets/img/workspace.jpg");
+    min-height: 935px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-enter {
+    background-color: #0f4c5c;
+}
+
+.btn-color {
+    background-color: #fca311;
+    color: white;
+}
+
+.font-color {
+    color: aliceblue;
+}
+
+a {
+    color: #fca311;
+}
+
+.btn-shadow {
+    box-shadow: 0px 5px 10px rgb(36, 36, 36);
+}
+
+input {
+    box-shadow: 0px 5px 10px rgb(36, 36, 36);
+}
+
+select {
+    box-shadow: 0px 5px 10px rgb(36, 36, 36);
+}

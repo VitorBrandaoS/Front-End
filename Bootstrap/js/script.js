@@ -1,7 +1,9 @@
 let email = document.querySelector("#email");//No Query não funciona sem a Hashtag
 let assunto = document.querySelector("#assunto");
+let texto = document.querySelector("#texto")
 let emailOk = false;
 let assuntoOk = false;
+let textoOk = false;
 
 function validaEmail() {
 
@@ -18,12 +20,25 @@ function validaEmail() {
     }
 }
 
+function validaTexto() {
+    let txtTexto = document.querySelector("#txtTexto");
+
+    if(texto.value.length >= 150) {
+        txtTexto.innerHTML = "Texto muito grande, digite no máximo 100 caracteres!";
+        txtTexto.style.color = "red";
+        txtTexto.style.display = "block";
+    } else {
+        txtTexto.style.display = "none";
+        textoOk = true;
+    }
+
+}
+
 function validaAssunto() {
     let txtAssunto = document.querySelector("#txtAssunto");
 
-
-    if(assunto.value.length >= 100) {
-        txtAssunto.innerHTML = "Texto muito grande, digite no máximo 100 caracteres!";
+    if(assunto.value.length >= 50) {
+        txtAssunto.innerHTML = "Assunto muito grande, digite no máximo 50 caracteres!";
         txtAssunto.style.color = "red";
         txtAssunto.style.display = "block";
     } else {
@@ -34,7 +49,7 @@ function validaAssunto() {
 }
 
 function enviar() {
-    if(nomeOk == true && emailOk == true && assuntoOk == true){
+    if(emailOk == true && assuntoOk == true && textoOk == true){
         window.alert("Enviado com sucesso!")
     }else {
         window.alert("Falha ao enviar! Por favor confira todos os campos e tente novamente!");

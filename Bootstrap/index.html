@@ -269,19 +269,26 @@
   <!-- Formulário -->
   <div class="container d-block mt-5 mb-5" id="formulario">
     <div class="mb-3">
-      <label for="exampleFormControlInput1" class="form-label">Email</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      <label for="exampleFormControlInput1" class="form-label" >Email</label>
+      <input type="email" class="form-control" id="email" placeholder="name@example.com" onkeyup="validaEmail()">
+      <div id="txtEmail"></div>
     </div>
     <div class="mb-3">
-      <label for="exampleFormControlInput1" class="form-label">Assunto</label>
-      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Assunto">
+      <label for="exampleFormControlInput2" class="form-label">Assunto</label>
+      <input type="text" class="form-control" id="assunto" placeholder="Assunto" onkeyup="validaAssunto()">
+      <div id="txtAssunto"></div>
     </div>
     <div class="mb-3">
       <label for="exampleFormControlTextarea1" class="form-label">Texto</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      <textarea class="form-control" id="texto" rows="3" onkeyup="validaTexto()"></textarea>
+      <div id="txtTexto"></div>
     </div>
+    <button type="button" class="btn btn-outline-danger" onclick="enviar()">Enviar</button>
+  </div>
+
   </div>
   <!-- /Formulário -->
+  
 
   <style>
     .social {
@@ -332,12 +339,14 @@
     </footer>
   </div>
   <!-- /Rodapé -->
+  
 
   <!-- Scripts Bootstraps -->
+  <script src="js/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
     crossorigin="anonymous"></script>
-
+  
 
 </body>
 

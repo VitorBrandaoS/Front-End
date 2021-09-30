@@ -5,3 +5,7 @@
 a{
     cursor: pointer;
 }
+
+.foto-perfil {
+    object-fit: cover;
+}

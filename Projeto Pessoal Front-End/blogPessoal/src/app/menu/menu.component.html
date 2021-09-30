@@ -7,11 +7,11 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto d-flex align-items-center">
             <li class="nav-item active">
-                <img src="assets/img/j9khQl1.jpeg" alt="Imagem perfil" width="50px" height="50px"
-                    class="img-fluid rounded-circle">
+                <img src="{{foto}}" alt="Imagem perfil" width="50px" height="50px"
+                    class="foto-perfil rounded-circle">
             </li>
             <li class="nav-item pl-3">
-                <p class="m-0 font-weight-bold text-white fs-16">Username</p>
+                <p class="m-0 font-weight-bold text-white fs-16">Hellow, {{nome}}!</p>
             </li>
             <li class="nav-item pl-3">
                 <a href="">
@@ -20,7 +20,7 @@
             </li>            
         </ul>
         <ul class="navbar-nav ml-auto d-flex align-items-center">
-            <a href="" class="m-0 font-weight-bold text-white fs-16">Exit<i class="fa fa-sign-out p-1" aria-hidden="true"></i></a>
+            <a (click)="sair()" class="m-0 font-weight-bold text-white fs-16">Exit<i class="fa fa-sign-out p-1" aria-hidden="true"></i></a>
         </ul>
     </div>
 </nav>

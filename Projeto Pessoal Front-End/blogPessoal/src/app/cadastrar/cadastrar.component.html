@@ -8,34 +8,34 @@
 
                         <div class="form-group">
                             <label for="name">Name</label>
-                            <input class="form-control" type="text" name="name" id="name" placeholder="Enter your name">
+                            <input [(ngModel)]="usuario.nome" class="form-control" type="text" name="name" id="name" placeholder="Enter your name">
                         </div>
                         <div class="form-group">
                             <label for="username">Username</label>
-                            <input class="form-control" type="text" name="username" id="username" placeholder="Enter a username">
+                            <input [(ngModel)]="usuario.usuario" class="form-control" type="text" name="username" id="username" placeholder="Enter a username">
                         </div>
                         <div class="form-group">
                             <label for="picture">Picture link</label>
-                            <input class="form-control" type="text" name="picture" id="picture" placeholder="Enter your picture link">
+                            <input [(ngModel)]="usuario.foto"  class="form-control" type="text" name="picture" id="picture" placeholder="Enter your picture link">
                         </div>
                         <div class="form-group">
                             <label for="password">Password</label>
-                            <input class="form-control" type="text" name="password" id="password" placeholder="Enter a password">
+                            <input [(ngModel)]="usuario.senha"  class="form-control" type="password" name="password" id="password" placeholder="Enter a password">
                         </div>
                         <div class="form-group">
                             <label for="confirmPass">Confirm password</label>
-                            <input class="form-control" type="text" name="confirmPass" id="confirmPass" placeholder="Confirm your password">
+                            <input (input)="confirmSenha($event)" class="form-control" type="password" name="confirmPass" id="confirmPass" placeholder="Confirm your password">
                         </div>
                         <div class="form-group">
                             <label for="userType">User type</label>
-                            <select class="form-control" name="userType" id="userType">
+                            <select (change)="tipoUser($event)" class="form-control" name="userType" id="userType">
                                 <option>Select user type</option>
                                 <option value="commun">Common</option>
                                 <option value="admin">Admin</option>
                             </select>
                         </div>
                         <div class="d-flex justify-content-center">
-                            <button type="submit" class="btn btn-shadow mr-4 btn-color">Sing up</button>
+                            <button type="submit" class="btn btn-shadow mr-4 btn-color" (click)="cadastrar()">Sing up</button>
                             <button type="submit" class="btn btn-shadow btn-danger" routerLink="/entrar">Cancel</button>                            
                         </div>
                     </div>
